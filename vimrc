@@ -42,6 +42,7 @@ endif
 
 " хранение всех swap-файлов в одном каталоге
 set directory=~/.vim/swap
+
 " возможные кодировки и последовательность определения
 set fileencodings=utf8,cp1251
 set encoding=utf8
@@ -75,7 +76,7 @@ imap <F2> <ESC><F2>a
 
 " вставка текущего времени и даты по F5
 "nmap <F5> "=strftime("%d-%m-%Y %H:%M:%S")"<CR>P
-imap <F5> <C-R>=strftime("%d-%m-%Y %H:%M:%S")<CR>
+"imap <F5> <C-R>=strftime("%d-%m-%Y %H:%M:%S")<CR>
 
 " «стандартное» поведение клавиши Home
 noremap  <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0'  : '^')
@@ -91,4 +92,4 @@ nnoremap <silent> <F9> :NERDTreeToggle <CR>
 filetype plugin on
 
 " set spell
-" set spellang=en,ru
+" set spelllang=en,ru
